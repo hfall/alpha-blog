@@ -1,2 +1,78 @@
+$navbar-default-bg: #3f88c5;
+$navbar-default-link-color: #fff;
+$navbar-border-radius:0;
+$navbar-default-link-active-color:#fff;
+$navbar-default-link-active-bg:none;
+$navbar-default-link-hover-color:#fff;
+/* $navbar-default-link-hover-bg:#fff; */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+* {
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  padding:0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #fff;
+}
+/* NAVBAR */
+.navbar-form input[type='text'] {
+  border:none;
+}
+.navbar-form input[type='submit'] {
+  border:none;
+  background:#fff;
+  color:#000;
+}
+.navbar-default .navbar-nav > li > a {
+  text-transform:uppercase;
+}
+#logo {
+  float:left;
+  font-size:1.7em;
+  color:#fff;
+  text-transform:uppercase;
+  letter-spacing: -1px;
+  font-weight:bold;
+}
+#logo:hover {
+  color:#fff;
+  text-decoration:none;
+}
+.navbar-default .navbar-toggle {
+  border:none;
+  background-color:none;
+  &:hover, &:focus {
+    background-color:transparent;
+  }
+
+  .icon-bar {
+    background-color:#fff;
+  }
+}
+/* HOME */
+.jumbotron {
+  background: url('../images/banner.jpeg') no-repeat center center;
+  background-size:cover;
+}
+.jumbo {
+  text-align:center;
+  h2 {
+    font-size:3em;
+/*     color:grey; */
+  }
+}
+
+/* ABOUT */
+
+
+
+/* ARTICLES */
+
+
+/* FOOTER */
+.footer-text {
+  display:inline;
+  margin-right:1em;
+}
