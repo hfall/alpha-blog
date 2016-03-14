@@ -82,9 +82,13 @@ body {
 .create-article {
   height:500px;
 }
-/* .create-article h1 {
-} */
-
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top:5px;
+}
+p#desc {
+  font-size:18px;
+}
 /* FOOTER */
 
 .footer-text {
