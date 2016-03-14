@@ -1,10 +1,11 @@
-$navbar-default-bg: #3f88c5;
-$navbar-default-link-color: #fff;
+/* $navbar-default-bg: #3f88c5; */
+$navbar-default-bg: transparent;
+$navbar-default-link-color: #191919;
 $navbar-border-radius:0;
-$navbar-default-link-active-color:#fff;
+$navbar-default-link-active-color:#191919;
 $navbar-default-link-active-bg:none;
-$navbar-default-link-hover-color:#fff;
-/* $navbar-default-link-hover-bg:#fff; */
+$navbar-default-link-hover-color:#191919;
+/* $navbar-default-link-hover-bg:#000; */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 * {
@@ -14,7 +15,8 @@ body {
   margin:0;
   padding:0;
   font-family: 'Source Sans Pro', sans-serif;
-  background: #fff;
+  background-image:asset-url('brickwall1.png');
+  background-attachment:fixed;
 }
 /* NAVBAR */
 .navbar-form input[type='text'] {
@@ -27,17 +29,17 @@ body {
 }
 .navbar-default .navbar-nav > li > a {
   text-transform:uppercase;
+  font-weight:600;
 }
 #logo {
+  margin-left:0;
   float:left;
   font-size:1.7em;
-  color:#fff;
-  text-transform:uppercase;
-  letter-spacing: -1px;
-  font-weight:bold;
+  font-family: 'Changa One', cursive;
+  color:#191919;
 }
 #logo:hover {
-  color:#fff;
+  color:#cc8400;
   text-decoration:none;
 }
 .navbar-default .navbar-toggle {
@@ -50,7 +52,12 @@ body {
   .icon-bar {
     background-color:#fff;
   }
+
 }
+
+/* .yield-wrapper {
+  height:780px;
+} */
 /* HOME */
 .jumbotron {
   display:flex;
@@ -58,16 +65,21 @@ body {
   align-items:center;
   flex-direction:column;
   height:500px;
-  background-color:#777777;
-  background-image: asset-url('banner.png');
-  background-blend-mode:multiply;
+  background-color:#ccc;
+  background-image: asset-url("bg-banner.png");
+  background-blend-mode:overlay;
+  background-position:100% 100%;
   background-size:cover;
 }
+.flash-messages {
+  margin-left:0;
+  margin-right:0;
+}
 .jumbo {
-/*   text-align:center; */
+  text-align:center;
   h2 {
     font-size:3em;
-    color:#fff;
+    color:#191919;
   }
   a {
     margin-top:30px;
@@ -100,7 +112,9 @@ p#desc {
 }
 /* FOOTER */
 .footer {
-  margin-bottom:20px;
+  border-top:1px solid #9d9d9d;
+  padding: 10px 0;
+  text-align:center;
 }
 .footer-text {
   display:inline;
