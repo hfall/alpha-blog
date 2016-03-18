@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   root "pages#home"
   get "/about" => "pages#about"
-  
+
   resources :articles
+
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
