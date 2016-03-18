@@ -1,8 +1,7 @@
 <h1 align="center"><%=@user.username%>'s profile</h1>
-<div class="row">
+
     <p align="center"><%= gravatar_for @user, size: 150 %><p>
 
-</div>
 <h4 align='center'><%= @user.username %></h4>
 
 <%= render "articles/article", obj: @user.articles %>
