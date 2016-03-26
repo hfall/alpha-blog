@@ -127,7 +127,14 @@ p#desc {
   color:red;
   margin:0 4px;
 }
-
+.badge-edit {
+  background-color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  a {
+  color:#fff;
+  }
+}
 .input_checkbox input {
   width: auto !important;
 }
