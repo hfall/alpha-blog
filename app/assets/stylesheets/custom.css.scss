@@ -37,7 +37,7 @@ body {
   font-size:1.7em;
   font-family: 'Coda', cursive;
   font-weight: 800;
-  color:#A94442;
+  color:#000;
 }
 
 .navbar-default .navbar-toggle {
@@ -60,25 +60,44 @@ body {
 .home {
   
 }
+
+a:hover {
+  text-decoration:none;
+}
+
 .jumbo {
   display:flex;
   justify-content:center;
   align-items:center;
   flex-direction:column;
   height:500px;
-  background-color:#ccc;
-  background-blend-mode:overlay;
-  background-position:100% 100%;
+  background-color:#f7f7f7;
+  background-image: asset_url('banner2.jpg');
+  background-blend-mode:luminosity;
   background-size:cover;
   color:#000;
   padding: 8em 1em;
-    text-align:center;
+  text-align:center;
+  h1 {
+    font-size: 27px;
+    font-weight: 300;
+    color: #000000;
+  }
   h2 {
-    font-size:3em;
-    color:#ff8172;
+    font-size: 3em;
+    color: #DC2610;
+
+   span {
+   font-family: 'Ubuntu', sans-serif;
+  }
   }
   a {
     margin-top:30px;
+  }
+  .btn-first {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
   }
 }
 .flash-messages {
@@ -144,9 +163,16 @@ p#desc {
   border-top:1px solid #9d9d9d;
   padding: 10px 0;
   text-align:center;
+  a {
+  color:#000;
+  font-weigth:600;
+  }
 }
 .footer-text {
   display:inline;
   margin-right:1em;
+  &:last-child {
+  font-weight:bold;
+  }
 }
 
