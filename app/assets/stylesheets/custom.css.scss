@@ -121,6 +121,17 @@ p#desc {
   padding-left:0;
   text-align:center;
 }
+
+.badge {
+  background-color: #fff;
+  color:red;
+  margin:0 4px;
+}
+
+.input_checkbox input {
+  width: auto !important;
+}
+
 /* FOOTER */
 .footer {
   border-top:1px solid #9d9d9d;
@@ -131,3 +142,4 @@ p#desc {
   display:inline;
   margin-right:1em;
 }
+
